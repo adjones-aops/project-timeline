@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 22px; /* Reduced from 24px */
+}
+
+h2 {
+    font-size: 18px; /* Reduced from 20px */
+    color: #5b5b5b;
+    margin-top: 10px; /* Reduced from 20px */
+}
+
+/* Form element styling */
+label {
+    display: block;
+    margin-bottom: 5px; /* Reduced from 10px */
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="number"], input[type="range"], input[type="date"] {
+    width: 100%;
+    padding: 6px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced from 20px */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Slider specifics */
+input[type="range"] {
+    height: 4px; /* Reduced height */
+    background-color: #ddd;
+    outline: none;
+    opacity: 0.85;
+    transition: background-color 0.2s, opacity 0.2s ease;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px; /* Slightly smaller thumb */
+    height: 18px; /* Slightly smaller thumb */
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+/* Results display */
+#result {
+    font-weight: bold;
+    font-size: 22px; /* Reduced from 24px */
+    color: #007bff;
+}
+
+/* Grouping sliders */
+.slider-group {
+    margin-bottom: 10px; /* Reduced from 20px */
+}
+
+#milestoneChart {
+    height: 150px;  /* Slightly larger to ensure visibility */
+}
+
+.timeline-container {
+    width: 80%; /* Adjust the width to fit the desired size */
+    position: relative;
+    margin: 20px auto; /* Center horizontally */
+  }
+  
+  .tick {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    position: absolute; /* Change to absolute positioning */
+  }
+  
+  .tick-label {
+    position: absolute;
+    top: 35px;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+  
+  .line {
+    height: 2px;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  .percentage-label {
+    position: absolute;
+    top: -20px; 
+    transform: translateX(-50%);
+  }
